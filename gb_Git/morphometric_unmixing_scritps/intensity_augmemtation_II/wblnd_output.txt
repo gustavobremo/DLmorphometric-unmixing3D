@@ -1,0 +1,1830 @@
+ ### computing with SLURM
+ ### package paths set to:
+ # conda: /hpc/local/CentOS7/pmc_rios/anaconda
+ # STAPL-3D: /hpc/local/CentOS7/pmc_rios/projects/STAPL3D-dev1.0.0/stapl3d
+ # ACME: /hpc/local/CentOS7/pmc_rios/workspace/MR-Source/Linux-i686
+ # FIJI: /hpc/local/CentOS7/pmc_rios/workspace/Fiji.app/ImageJ-linux64
+ # ILASTIK: /hpc/local/CentOS7/pmc_rios/workspace/ilastik-1.3.2post1-Linux/run_ilastik.sh
+Loading channel:  0
+Adding layer:  69
+Adding layer:  70
+Adding layer:  71
+Adding layer:  72
+Adding layer:  73
+Adding layer:  74
+Adding layer:  75
+Adding layer:  76
+Adding layer:  77
+Adding layer:  78
+Adding layer:  79
+Adding layer:  80
+Adding layer:  81
+Adding layer:  82
+Adding layer:  83
+Adding layer:  84
+Adding layer:  85
+Adding layer:  86
+Adding layer:  87
+Adding layer:  88
+Adding layer:  89
+Adding layer:  90
+Adding layer:  91
+Adding layer:  92
+Adding layer:  93
+Adding layer:  94
+Adding layer:  95
+Adding layer:  96
+Adding layer:  97
+Adding layer:  98
+Adding layer:  99
+Adding layer:  100
+Adding layer:  101
+Adding layer:  102
+Adding layer:  103
+Adding layer:  104
+Adding layer:  105
+Adding layer:  106
+Adding layer:  107
+Adding layer:  108
+Adding layer:  109
+Adding layer:  110
+Adding layer:  111
+Adding layer:  112
+Adding layer:  113
+Adding layer:  114
+Adding layer:  115
+Adding layer:  116
+Adding layer:  117
+Adding layer:  118
+Adding layer:  119
+Adding layer:  120
+Adding layer:  121
+Adding layer:  122
+Adding layer:  123
+Adding layer:  124
+Adding layer:  125
+Adding layer:  126
+Adding layer:  127
+Adding layer:  128
+Adding layer:  129
+Adding layer:  130
+Adding layer:  131
+Adding layer:  132
+Adding layer:  133
+Adding layer:  134
+Adding layer:  135
+Adding layer:  136
+Compiling list for channel:  0
+Loading channel:  1
+Adding layer:  69
+Adding layer:  70
+Adding layer:  71
+Adding layer:  72
+Adding layer:  73
+Adding layer:  74
+Adding layer:  75
+Adding layer:  76
+Adding layer:  77
+Adding layer:  78
+Adding layer:  79
+Adding layer:  80
+Adding layer:  81
+Adding layer:  82
+Adding layer:  83
+Adding layer:  84
+Adding layer:  85
+Adding layer:  86
+Adding layer:  87
+Adding layer:  88
+Adding layer:  89
+Adding layer:  90
+Adding layer:  91
+Adding layer:  92
+Adding layer:  93
+Adding layer:  94
+Adding layer:  95
+Adding layer:  96
+Adding layer:  97
+Adding layer:  98
+Adding layer:  99
+Adding layer:  100
+Adding layer:  101
+Adding layer:  102
+Adding layer:  103
+Adding layer:  104
+Adding layer:  105
+Adding layer:  106
+Adding layer:  107
+Adding layer:  108
+Adding layer:  109
+Adding layer:  110
+Adding layer:  111
+Adding layer:  112
+Adding layer:  113
+Adding layer:  114
+Adding layer:  115
+Adding layer:  116
+Adding layer:  117
+Adding layer:  118
+Adding layer:  119
+Adding layer:  120
+Adding layer:  121
+Adding layer:  122
+Adding layer:  123
+Adding layer:  124
+Adding layer:  125
+Adding layer:  126
+Adding layer:  127
+Adding layer:  128
+Adding layer:  129
+Adding layer:  130
+Adding layer:  131
+Adding layer:  132
+Adding layer:  133
+Adding layer:  134
+Adding layer:  135
+Adding layer:  136
+Compiling list for channel:  1
+Loading channel:  2
+Adding layer:  69
+Adding layer:  70
+Adding layer:  71
+Adding layer:  72
+Adding layer:  73
+Adding layer:  74
+Adding layer:  75
+Adding layer:  76
+Adding layer:  77
+Adding layer:  78
+Adding layer:  79
+Adding layer:  80
+Adding layer:  81
+Adding layer:  82
+Adding layer:  83
+Adding layer:  84
+Adding layer:  85
+Adding layer:  86
+Adding layer:  87
+Adding layer:  88
+Adding layer:  89
+Adding layer:  90
+Adding layer:  91
+Adding layer:  92
+Adding layer:  93
+Adding layer:  94
+Adding layer:  95
+Adding layer:  96
+Adding layer:  97
+Adding layer:  98
+Adding layer:  99
+Adding layer:  100
+Adding layer:  101
+Adding layer:  102
+Adding layer:  103
+Adding layer:  104
+Adding layer:  105
+Adding layer:  106
+Adding layer:  107
+Adding layer:  108
+Adding layer:  109
+Adding layer:  110
+Adding layer:  111
+Adding layer:  112
+Adding layer:  113
+Adding layer:  114
+Adding layer:  115
+Adding layer:  116
+Adding layer:  117
+Adding layer:  118
+Adding layer:  119
+Adding layer:  120
+Adding layer:  121
+Adding layer:  122
+Adding layer:  123
+Adding layer:  124
+Adding layer:  125
+Adding layer:  126
+Adding layer:  127
+Adding layer:  128
+Adding layer:  129
+Adding layer:  130
+Adding layer:  131
+Adding layer:  132
+Adding layer:  133
+Adding layer:  134
+Adding layer:  135
+Adding layer:  136
+Compiling list for channel:  2
+
+
+Percentiles ch1,ch2,ch3 : [7437.0, 3329.0, 9718.0]
+
+
+
+
+3332 1024 1024
+512
+512
+
+
+Testing set ************
+Processing patch
+Channel:  0
+Tile layer:  1868
+ij position:  134 130
+percentile:  9718.0
+Channel:  1
+Tile layer:  1868
+ij position:  134 130
+percentile:  9718.0
+Channel:  2
+Tile layer:  1868
+ij position:  134 130
+percentile:  9718.0
+Total seconds:  0.01308894157409668
+
+
+Processing patch
+Channel:  0
+Tile layer:  2723
+ij position:  200 434
+percentile:  9718.0
+Channel:  1
+Tile layer:  2723
+ij position:  200 434
+percentile:  9718.0
+Channel:  2
+Tile layer:  2723
+ij position:  200 434
+percentile:  9718.0
+Total seconds:  0.011107921600341797
+
+
+Processing patch
+Channel:  0
+Tile layer:  1280
+ij position:  45 388
+percentile:  9718.0
+Channel:  1
+Tile layer:  1280
+ij position:  45 388
+percentile:  9718.0
+Channel:  2
+Tile layer:  1280
+ij position:  45 388
+percentile:  9718.0
+Total seconds:  0.010050535202026367
+
+
+Processing patch
+Channel:  0
+Tile layer:  1912
+ij position:  16 386
+percentile:  9718.0
+Channel:  1
+Tile layer:  1912
+ij position:  16 386
+percentile:  9718.0
+Channel:  2
+Tile layer:  1912
+ij position:  16 386
+percentile:  9718.0
+Total seconds:  0.010106325149536133
+
+
+Processing patch
+Channel:  0
+Tile layer:  1091
+ij position:  178 394
+percentile:  9718.0
+Channel:  1
+Tile layer:  1091
+ij position:  178 394
+percentile:  9718.0
+Channel:  2
+Tile layer:  1091
+ij position:  178 394
+percentile:  9718.0
+Total seconds:  0.007014751434326172
+
+
+Processing patch
+Channel:  0
+Tile layer:  999
+ij position:  31 392
+percentile:  9718.0
+Channel:  1
+Tile layer:  999
+ij position:  31 392
+percentile:  9718.0
+Channel:  2
+Tile layer:  999
+ij position:  31 392
+percentile:  9718.0
+Total seconds:  0.010100841522216797
+
+
+Processing patch
+Channel:  0
+Tile layer:  552
+ij position:  413 211
+percentile:  9718.0
+Channel:  1
+Tile layer:  552
+ij position:  413 211
+percentile:  9718.0
+Channel:  2
+Tile layer:  552
+ij position:  413 211
+percentile:  9718.0
+Total seconds:  0.00677800178527832
+
+
+Processing patch
+Channel:  0
+Tile layer:  2558
+ij position:  321 505
+percentile:  9718.0
+Channel:  1
+Tile layer:  2558
+ij position:  321 505
+percentile:  9718.0
+Channel:  2
+Tile layer:  2558
+ij position:  321 505
+percentile:  9718.0
+Total seconds:  0.009825468063354492
+
+
+Processing patch
+Channel:  0
+Tile layer:  3072
+ij position:  130 24
+percentile:  9718.0
+Channel:  1
+Tile layer:  3072
+ij position:  130 24
+percentile:  9718.0
+Channel:  2
+Tile layer:  3072
+ij position:  130 24
+percentile:  9718.0
+Total seconds:  0.00665283203125
+
+
+Processing patch
+Channel:  0
+Tile layer:  3217
+ij position:  270 471
+percentile:  9718.0
+Channel:  1
+Tile layer:  3217
+ij position:  270 471
+percentile:  9718.0
+Channel:  2
+Tile layer:  3217
+ij position:  270 471
+percentile:  9718.0
+Total seconds:  0.009975433349609375
+
+
+Processing patch
+Channel:  0
+Tile layer:  1215
+ij position:  481 368
+percentile:  9718.0
+Channel:  1
+Tile layer:  1215
+ij position:  481 368
+percentile:  9718.0
+Channel:  2
+Tile layer:  1215
+ij position:  481 368
+percentile:  9718.0
+Total seconds:  0.006491899490356445
+
+
+Processing patch
+Channel:  0
+Tile layer:  3076
+ij position:  19 364
+percentile:  9718.0
+Channel:  1
+Tile layer:  3076
+ij position:  19 364
+percentile:  9718.0
+Channel:  2
+Tile layer:  3076
+ij position:  19 364
+percentile:  9718.0
+Total seconds:  0.009910821914672852
+
+
+Processing patch
+Channel:  0
+Tile layer:  2282
+ij position:  483 144
+percentile:  9718.0
+Channel:  1
+Tile layer:  2282
+ij position:  483 144
+percentile:  9718.0
+Channel:  2
+Tile layer:  2282
+ij position:  483 144
+percentile:  9718.0
+Total seconds:  0.006715297698974609
+
+
+Processing patch
+Channel:  0
+Tile layer:  2242
+ij position:  307 487
+percentile:  9718.0
+Channel:  1
+Tile layer:  2242
+ij position:  307 487
+percentile:  9718.0
+Channel:  2
+Tile layer:  2242
+ij position:  307 487
+percentile:  9718.0
+Total seconds:  0.00997161865234375
+
+
+Processing patch
+Channel:  0
+Tile layer:  1845
+ij position:  286 355
+percentile:  9718.0
+Channel:  1
+Tile layer:  1845
+ij position:  286 355
+percentile:  9718.0
+Channel:  2
+Tile layer:  1845
+ij position:  286 355
+percentile:  9718.0
+Total seconds:  0.00670623779296875
+
+
+Processing patch
+Channel:  0
+Tile layer:  41
+ij position:  483 392
+percentile:  9718.0
+Channel:  1
+Tile layer:  41
+ij position:  483 392
+percentile:  9718.0
+Channel:  2
+Tile layer:  41
+ij position:  483 392
+percentile:  9718.0
+Total seconds:  0.009917974472045898
+
+
+Processing patch
+Channel:  0
+Tile layer:  2691
+ij position:  117 246
+percentile:  9718.0
+Channel:  1
+Tile layer:  2691
+ij position:  117 246
+percentile:  9718.0
+Channel:  2
+Tile layer:  2691
+ij position:  117 246
+percentile:  9718.0
+Total seconds:  0.006732463836669922
+
+
+Processing patch
+Channel:  0
+Tile layer:  2199
+ij position:  451 387
+percentile:  9718.0
+Channel:  1
+Tile layer:  2199
+ij position:  451 387
+percentile:  9718.0
+Channel:  2
+Tile layer:  2199
+ij position:  451 387
+percentile:  9718.0
+Total seconds:  0.009884357452392578
+
+
+Processing patch
+Channel:  0
+Tile layer:  1052
+ij position:  415 362
+percentile:  9718.0
+Channel:  1
+Tile layer:  1052
+ij position:  415 362
+percentile:  9718.0
+Channel:  2
+Tile layer:  1052
+ij position:  415 362
+percentile:  9718.0
+Total seconds:  0.00677180290222168
+
+
+Processing patch
+Channel:  0
+Tile layer:  1857
+ij position:  359 77
+percentile:  9718.0
+Channel:  1
+Tile layer:  1857
+ij position:  359 77
+percentile:  9718.0
+Channel:  2
+Tile layer:  1857
+ij position:  359 77
+percentile:  9718.0
+Total seconds:  0.010086774826049805
+
+
+Processing patch
+Channel:  0
+Tile layer:  1495
+ij position:  180 462
+percentile:  9718.0
+Channel:  1
+Tile layer:  1495
+ij position:  180 462
+percentile:  9718.0
+Channel:  2
+Tile layer:  1495
+ij position:  180 462
+percentile:  9718.0
+Total seconds:  0.006713390350341797
+
+
+Processing patch
+Channel:  0
+Tile layer:  3000
+ij position:  104 153
+percentile:  9718.0
+Channel:  1
+Tile layer:  3000
+ij position:  104 153
+percentile:  9718.0
+Channel:  2
+Tile layer:  3000
+ij position:  104 153
+percentile:  9718.0
+Total seconds:  0.010007619857788086
+
+
+Processing patch
+Channel:  0
+Tile layer:  273
+ij position:  297 330
+percentile:  9718.0
+Channel:  1
+Tile layer:  273
+ij position:  297 330
+percentile:  9718.0
+Channel:  2
+Tile layer:  273
+ij position:  297 330
+percentile:  9718.0
+Total seconds:  0.006537914276123047
+
+
+Processing patch
+Channel:  0
+Tile layer:  3085
+ij position:  224 28
+percentile:  9718.0
+Channel:  1
+Tile layer:  3085
+ij position:  224 28
+percentile:  9718.0
+Channel:  2
+Tile layer:  3085
+ij position:  224 28
+percentile:  9718.0
+Total seconds:  0.009834051132202148
+
+
+Processing patch
+Channel:  0
+Tile layer:  2222
+ij position:  478 255
+percentile:  9718.0
+Channel:  1
+Tile layer:  2222
+ij position:  478 255
+percentile:  9718.0
+Channel:  2
+Tile layer:  2222
+ij position:  478 255
+percentile:  9718.0
+Total seconds:  0.006802082061767578
+
+
+Processing patch
+Channel:  0
+Tile layer:  2370
+ij position:  258 46
+percentile:  9718.0
+Channel:  1
+Tile layer:  2370
+ij position:  258 46
+percentile:  9718.0
+Channel:  2
+Tile layer:  2370
+ij position:  258 46
+percentile:  9718.0
+Total seconds:  0.009923696517944336
+
+
+Processing patch
+Channel:  0
+Tile layer:  1170
+ij position:  193 91
+percentile:  9718.0
+Channel:  1
+Tile layer:  1170
+ij position:  193 91
+percentile:  9718.0
+Channel:  2
+Tile layer:  1170
+ij position:  193 91
+percentile:  9718.0
+Total seconds:  0.009057044982910156
+
+
+Processing patch
+Channel:  0
+Tile layer:  497
+ij position:  79 76
+percentile:  9718.0
+Channel:  1
+Tile layer:  497
+ij position:  79 76
+percentile:  9718.0
+Channel:  2
+Tile layer:  497
+ij position:  79 76
+percentile:  9718.0
+Total seconds:  0.009807825088500977
+
+
+Processing patch
+Channel:  0
+Tile layer:  262
+ij position:  234 182
+percentile:  9718.0
+Channel:  1
+Tile layer:  262
+ij position:  234 182
+percentile:  9718.0
+Channel:  2
+Tile layer:  262
+ij position:  234 182
+percentile:  9718.0
+Total seconds:  0.0068149566650390625
+
+
+Processing patch
+Channel:  0
+Tile layer:  2072
+ij position:  37 430
+percentile:  9718.0
+Channel:  1
+Tile layer:  2072
+ij position:  37 430
+percentile:  9718.0
+Channel:  2
+Tile layer:  2072
+ij position:  37 430
+percentile:  9718.0
+Total seconds:  0.010138988494873047
+
+
+Processing patch
+Channel:  0
+Tile layer:  1674
+ij position:  283 409
+percentile:  9718.0
+Channel:  1
+Tile layer:  1674
+ij position:  283 409
+percentile:  9718.0
+Channel:  2
+Tile layer:  1674
+ij position:  283 409
+percentile:  9718.0
+Total seconds:  0.006928682327270508
+
+
+Processing patch
+Channel:  0
+Tile layer:  1146
+ij position:  207 2
+percentile:  9718.0
+Channel:  1
+Tile layer:  1146
+ij position:  207 2
+percentile:  9718.0
+Channel:  2
+Tile layer:  1146
+ij position:  207 2
+percentile:  9718.0
+Total seconds:  0.009664297103881836
+
+
+Processing patch
+Channel:  0
+Tile layer:  1552
+ij position:  109 387
+percentile:  9718.0
+Channel:  1
+Tile layer:  1552
+ij position:  109 387
+percentile:  9718.0
+Channel:  2
+Tile layer:  1552
+ij position:  109 387
+percentile:  9718.0
+Total seconds:  0.006697416305541992
+
+
+Processing patch
+Channel:  0
+Tile layer:  167
+ij position:  128 114
+percentile:  9718.0
+Channel:  1
+Tile layer:  167
+ij position:  128 114
+percentile:  9718.0
+Channel:  2
+Tile layer:  167
+ij position:  128 114
+percentile:  9718.0
+Total seconds:  0.009770631790161133
+
+
+Processing patch
+Channel:  0
+Tile layer:  2085
+ij position:  466 461
+percentile:  9718.0
+Channel:  1
+Tile layer:  2085
+ij position:  466 461
+percentile:  9718.0
+Channel:  2
+Tile layer:  2085
+ij position:  466 461
+percentile:  9718.0
+Total seconds:  0.006781101226806641
+
+
+Processing patch
+Channel:  0
+Tile layer:  3086
+ij position:  452 70
+percentile:  9718.0
+Channel:  1
+Tile layer:  3086
+ij position:  452 70
+percentile:  9718.0
+Channel:  2
+Tile layer:  3086
+ij position:  452 70
+percentile:  9718.0
+Total seconds:  0.009818077087402344
+
+
+Processing patch
+Channel:  0
+Tile layer:  2846
+ij position:  93 238
+percentile:  9718.0
+Channel:  1
+Tile layer:  2846
+ij position:  93 238
+percentile:  9718.0
+Channel:  2
+Tile layer:  2846
+ij position:  93 238
+percentile:  9718.0
+Total seconds:  0.006722927093505859
+
+
+Processing patch
+Channel:  0
+Tile layer:  258
+ij position:  212 3
+percentile:  9718.0
+Channel:  1
+Tile layer:  258
+ij position:  212 3
+percentile:  9718.0
+Channel:  2
+Tile layer:  258
+ij position:  212 3
+percentile:  9718.0
+Total seconds:  0.009770870208740234
+
+
+Processing patch
+Channel:  0
+Tile layer:  851
+ij position:  463 245
+percentile:  9718.0
+Channel:  1
+Tile layer:  851
+ij position:  463 245
+percentile:  9718.0
+Channel:  2
+Tile layer:  851
+ij position:  463 245
+percentile:  9718.0
+Total seconds:  0.006654500961303711
+
+
+Processing patch
+Channel:  0
+Tile layer:  3185
+ij position:  121 403
+percentile:  9718.0
+Channel:  1
+Tile layer:  3185
+ij position:  121 403
+percentile:  9718.0
+Channel:  2
+Tile layer:  3185
+ij position:  121 403
+percentile:  9718.0
+Total seconds:  0.00991058349609375
+
+
+Processing patch
+Channel:  0
+Tile layer:  8
+ij position:  204 173
+percentile:  9718.0
+Channel:  1
+Tile layer:  8
+ij position:  204 173
+percentile:  9718.0
+Channel:  2
+Tile layer:  8
+ij position:  204 173
+percentile:  9718.0
+Total seconds:  0.006591320037841797
+
+
+Processing patch
+Channel:  0
+Tile layer:  174
+ij position:  101 212
+percentile:  9718.0
+Channel:  1
+Tile layer:  174
+ij position:  101 212
+percentile:  9718.0
+Channel:  2
+Tile layer:  174
+ij position:  101 212
+percentile:  9718.0
+Total seconds:  0.009771347045898438
+
+
+Processing patch
+Channel:  0
+Tile layer:  903
+ij position:  357 439
+percentile:  9718.0
+Channel:  1
+Tile layer:  903
+ij position:  357 439
+percentile:  9718.0
+Channel:  2
+Tile layer:  903
+ij position:  357 439
+percentile:  9718.0
+Total seconds:  0.006636619567871094
+
+
+Processing patch
+Channel:  0
+Tile layer:  2948
+ij position:  362 391
+percentile:  9718.0
+Channel:  1
+Tile layer:  2948
+ij position:  362 391
+percentile:  9718.0
+Channel:  2
+Tile layer:  2948
+ij position:  362 391
+percentile:  9718.0
+Total seconds:  0.009883403778076172
+
+
+Processing patch
+Channel:  0
+Tile layer:  1783
+ij position:  432 313
+percentile:  9718.0
+Channel:  1
+Tile layer:  1783
+ij position:  432 313
+percentile:  9718.0
+Channel:  2
+Tile layer:  1783
+ij position:  432 313
+percentile:  9718.0
+Total seconds:  0.006684541702270508
+
+
+Processing patch
+Channel:  0
+Tile layer:  1658
+ij position:  213 509
+percentile:  9718.0
+Channel:  1
+Tile layer:  1658
+ij position:  213 509
+percentile:  9718.0
+Channel:  2
+Tile layer:  1658
+ij position:  213 509
+percentile:  9718.0
+Total seconds:  0.010105133056640625
+
+
+Processing patch
+Channel:  0
+Tile layer:  1891
+ij position:  37 178
+percentile:  9718.0
+Channel:  1
+Tile layer:  1891
+ij position:  37 178
+percentile:  9718.0
+Channel:  2
+Tile layer:  1891
+ij position:  37 178
+percentile:  9718.0
+Total seconds:  0.006798505783081055
+
+
+Processing patch
+Channel:  0
+Tile layer:  671
+ij position:  269 51
+percentile:  9718.0
+Channel:  1
+Tile layer:  671
+ij position:  269 51
+percentile:  9718.0
+Channel:  2
+Tile layer:  671
+ij position:  269 51
+percentile:  9718.0
+Total seconds:  0.009696006774902344
+
+
+Processing patch
+Channel:  0
+Tile layer:  2526
+ij position:  478 460
+percentile:  9718.0
+Channel:  1
+Tile layer:  2526
+ij position:  478 460
+percentile:  9718.0
+Channel:  2
+Tile layer:  2526
+ij position:  478 460
+percentile:  9718.0
+Total seconds:  0.0067479610443115234
+
+
+Processing patch
+Channel:  0
+Tile layer:  610
+ij position:  154 129
+percentile:  9718.0
+Channel:  1
+Tile layer:  610
+ij position:  154 129
+percentile:  9718.0
+Channel:  2
+Tile layer:  610
+ij position:  154 129
+percentile:  9718.0
+Total seconds:  0.009766101837158203
+
+
+Processing patch
+Channel:  0
+Tile layer:  935
+ij position:  314 498
+percentile:  9718.0
+Channel:  1
+Tile layer:  935
+ij position:  314 498
+percentile:  9718.0
+Channel:  2
+Tile layer:  935
+ij position:  314 498
+percentile:  9718.0
+Total seconds:  0.006594181060791016
+
+
+Processing patch
+Channel:  0
+Tile layer:  2198
+ij position:  267 36
+percentile:  9718.0
+Channel:  1
+Tile layer:  2198
+ij position:  267 36
+percentile:  9718.0
+Channel:  2
+Tile layer:  2198
+ij position:  267 36
+percentile:  9718.0
+Total seconds:  0.009776115417480469
+
+
+Processing patch
+Channel:  0
+Tile layer:  3156
+ij position:  500 224
+percentile:  9718.0
+Channel:  1
+Tile layer:  3156
+ij position:  500 224
+percentile:  9718.0
+Channel:  2
+Tile layer:  3156
+ij position:  500 224
+percentile:  9718.0
+Total seconds:  0.0067596435546875
+
+
+Processing patch
+Channel:  0
+Tile layer:  2668
+ij position:  470 421
+percentile:  9718.0
+Channel:  1
+Tile layer:  2668
+ij position:  470 421
+percentile:  9718.0
+Channel:  2
+Tile layer:  2668
+ij position:  470 421
+percentile:  9718.0
+Total seconds:  0.010018110275268555
+
+
+Processing patch
+Channel:  0
+Tile layer:  591
+ij position:  236 6
+percentile:  9718.0
+Channel:  1
+Tile layer:  591
+ij position:  236 6
+percentile:  9718.0
+Channel:  2
+Tile layer:  591
+ij position:  236 6
+percentile:  9718.0
+Total seconds:  0.006492137908935547
+
+
+Processing patch
+Channel:  0
+Tile layer:  1001
+ij position:  33 126
+percentile:  9718.0
+Channel:  1
+Tile layer:  1001
+ij position:  33 126
+percentile:  9718.0
+Channel:  2
+Tile layer:  1001
+ij position:  33 126
+percentile:  9718.0
+Total seconds:  0.009802579879760742
+
+
+Processing patch
+Channel:  0
+Tile layer:  3284
+ij position:  501 426
+percentile:  9718.0
+Channel:  1
+Tile layer:  3284
+ij position:  501 426
+percentile:  9718.0
+Channel:  2
+Tile layer:  3284
+ij position:  501 426
+percentile:  9718.0
+Total seconds:  0.006764888763427734
+
+
+Processing patch
+Channel:  0
+Tile layer:  2789
+ij position:  270 185
+percentile:  9718.0
+Channel:  1
+Tile layer:  2789
+ij position:  270 185
+percentile:  9718.0
+Channel:  2
+Tile layer:  2789
+ij position:  270 185
+percentile:  9718.0
+Total seconds:  0.009909391403198242
+
+
+Processing patch
+Channel:  0
+Tile layer:  1589
+ij position:  114 60
+percentile:  9718.0
+Channel:  1
+Tile layer:  1589
+ij position:  114 60
+percentile:  9718.0
+Channel:  2
+Tile layer:  1589
+ij position:  114 60
+percentile:  9718.0
+Total seconds:  0.006959438323974609
+
+
+Processing patch
+Channel:  0
+Tile layer:  1056
+ij position:  459 452
+percentile:  9718.0
+Channel:  1
+Tile layer:  1056
+ij position:  459 452
+percentile:  9718.0
+Channel:  2
+Tile layer:  1056
+ij position:  459 452
+percentile:  9718.0
+Total seconds:  0.009730815887451172
+
+
+Processing patch
+Channel:  0
+Tile layer:  90
+ij position:  488 214
+percentile:  9718.0
+Channel:  1
+Tile layer:  90
+ij position:  488 214
+percentile:  9718.0
+Channel:  2
+Tile layer:  90
+ij position:  488 214
+percentile:  9718.0
+Total seconds:  0.0070285797119140625
+
+
+Processing patch
+Channel:  0
+Tile layer:  3266
+ij position:  412 253
+percentile:  9718.0
+Channel:  1
+Tile layer:  3266
+ij position:  412 253
+percentile:  9718.0
+Channel:  2
+Tile layer:  3266
+ij position:  412 253
+percentile:  9718.0
+Total seconds:  0.00980067253112793
+
+
+Processing patch
+Channel:  0
+Tile layer:  2005
+ij position:  185 225
+percentile:  9718.0
+Channel:  1
+Tile layer:  2005
+ij position:  185 225
+percentile:  9718.0
+Channel:  2
+Tile layer:  2005
+ij position:  185 225
+percentile:  9718.0
+Total seconds:  0.006743669509887695
+
+
+Processing patch
+Channel:  0
+Tile layer:  3054
+ij position:  462 417
+percentile:  9718.0
+Channel:  1
+Tile layer:  3054
+ij position:  462 417
+percentile:  9718.0
+Channel:  2
+Tile layer:  3054
+ij position:  462 417
+percentile:  9718.0
+Total seconds:  0.009839057922363281
+
+
+Processing patch
+Channel:  0
+Tile layer:  1418
+ij position:  179 136
+percentile:  9718.0
+Channel:  1
+Tile layer:  1418
+ij position:  179 136
+percentile:  9718.0
+Channel:  2
+Tile layer:  1418
+ij position:  179 136
+percentile:  9718.0
+Total seconds:  0.006531953811645508
+
+
+Processing patch
+Channel:  0
+Tile layer:  450
+ij position:  218 421
+percentile:  9718.0
+Channel:  1
+Tile layer:  450
+ij position:  218 421
+percentile:  9718.0
+Channel:  2
+Tile layer:  450
+ij position:  218 421
+percentile:  9718.0
+Total seconds:  0.009991884231567383
+
+
+Processing patch
+Channel:  0
+Tile layer:  688
+ij position:  369 17
+percentile:  9718.0
+Channel:  1
+Tile layer:  688
+ij position:  369 17
+percentile:  9718.0
+Channel:  2
+Tile layer:  688
+ij position:  369 17
+percentile:  9718.0
+Total seconds:  0.0067403316497802734
+
+
+Processing patch
+Channel:  0
+Tile layer:  604
+ij position:  135 123
+percentile:  9718.0
+Channel:  1
+Tile layer:  604
+ij position:  135 123
+percentile:  9718.0
+Channel:  2
+Tile layer:  604
+ij position:  135 123
+percentile:  9718.0
+Total seconds:  0.010189533233642578
+
+
+Processing patch
+Channel:  0
+Tile layer:  2292
+ij position:  255 437
+percentile:  9718.0
+Channel:  1
+Tile layer:  2292
+ij position:  255 437
+percentile:  9718.0
+Channel:  2
+Tile layer:  2292
+ij position:  255 437
+percentile:  9718.0
+Total seconds:  0.006746768951416016
+
+
+Processing patch
+Channel:  0
+Tile layer:  733
+ij position:  214 494
+percentile:  9718.0
+Channel:  1
+Tile layer:  733
+ij position:  214 494
+percentile:  9718.0
+Channel:  2
+Tile layer:  733
+ij position:  214 494
+percentile:  9718.0
+Total seconds:  0.009817838668823242
+
+
+Processing patch
+Channel:  0
+Tile layer:  729
+ij position:  102 272
+percentile:  9718.0
+Channel:  1
+Tile layer:  729
+ij position:  102 272
+percentile:  9718.0
+Channel:  2
+Tile layer:  729
+ij position:  102 272
+percentile:  9718.0
+Total seconds:  0.00664210319519043
+
+
+Processing patch
+Channel:  0
+Tile layer:  1828
+ij position:  278 110
+percentile:  9718.0
+Channel:  1
+Tile layer:  1828
+ij position:  278 110
+percentile:  9718.0
+Channel:  2
+Tile layer:  1828
+ij position:  278 110
+percentile:  9718.0
+Total seconds:  0.009940385818481445
+
+
+Processing patch
+Channel:  0
+Tile layer:  2110
+ij position:  152 395
+percentile:  9718.0
+Channel:  1
+Tile layer:  2110
+ij position:  152 395
+percentile:  9718.0
+Channel:  2
+Tile layer:  2110
+ij position:  152 395
+percentile:  9718.0
+Total seconds:  0.00666046142578125
+
+
+Processing patch
+Channel:  0
+Tile layer:  2966
+ij position:  86 388
+percentile:  9718.0
+Channel:  1
+Tile layer:  2966
+ij position:  86 388
+percentile:  9718.0
+Channel:  2
+Tile layer:  2966
+ij position:  86 388
+percentile:  9718.0
+Total seconds:  0.009846687316894531
+
+
+Processing patch
+Channel:  0
+Tile layer:  3190
+ij position:  258 366
+percentile:  9718.0
+Channel:  1
+Tile layer:  3190
+ij position:  258 366
+percentile:  9718.0
+Channel:  2
+Tile layer:  3190
+ij position:  258 366
+percentile:  9718.0
+Total seconds:  0.006890058517456055
+
+
+Processing patch
+Channel:  0
+Tile layer:  1208
+ij position:  452 470
+percentile:  9718.0
+Channel:  1
+Tile layer:  1208
+ij position:  452 470
+percentile:  9718.0
+Channel:  2
+Tile layer:  1208
+ij position:  452 470
+percentile:  9718.0
+Total seconds:  0.0097808837890625
+
+
+Processing patch
+Channel:  0
+Tile layer:  2591
+ij position:  56 407
+percentile:  9718.0
+Channel:  1
+Tile layer:  2591
+ij position:  56 407
+percentile:  9718.0
+Channel:  2
+Tile layer:  2591
+ij position:  56 407
+percentile:  9718.0
+Total seconds:  0.006714582443237305
+
+
+Processing patch
+Channel:  0
+Tile layer:  930
+ij position:  56 274
+percentile:  9718.0
+Channel:  1
+Tile layer:  930
+ij position:  56 274
+percentile:  9718.0
+Channel:  2
+Tile layer:  930
+ij position:  56 274
+percentile:  9718.0
+Total seconds:  0.009824991226196289
+
+
+Processing patch
+Channel:  0
+Tile layer:  1439
+ij position:  74 242
+percentile:  9718.0
+Channel:  1
+Tile layer:  1439
+ij position:  74 242
+percentile:  9718.0
+Channel:  2
+Tile layer:  1439
+ij position:  74 242
+percentile:  9718.0
+Total seconds:  0.006722450256347656
+
+
+Processing patch
+Channel:  0
+Tile layer:  781
+ij position:  169 156
+percentile:  9718.0
+Channel:  1
+Tile layer:  781
+ij position:  169 156
+percentile:  9718.0
+Channel:  2
+Tile layer:  781
+ij position:  169 156
+percentile:  9718.0
+Total seconds:  0.009778976440429688
+
+
+Processing patch
+Channel:  0
+Tile layer:  39
+ij position:  322 35
+percentile:  9718.0
+Channel:  1
+Tile layer:  39
+ij position:  322 35
+percentile:  9718.0
+Channel:  2
+Tile layer:  39
+ij position:  322 35
+percentile:  9718.0
+Total seconds:  0.0065915584564208984
+
+
+Processing patch
+Channel:  0
+Tile layer:  25
+ij position:  150 133
+percentile:  9718.0
+Channel:  1
+Tile layer:  25
+ij position:  150 133
+percentile:  9718.0
+Channel:  2
+Tile layer:  25
+ij position:  150 133
+percentile:  9718.0
+Total seconds:  0.010066032409667969
+
+
+Processing patch
+Channel:  0
+Tile layer:  889
+ij position:  207 508
+percentile:  9718.0
+Channel:  1
+Tile layer:  889
+ij position:  207 508
+percentile:  9718.0
+Channel:  2
+Tile layer:  889
+ij position:  207 508
+percentile:  9718.0
+Total seconds:  0.0068471431732177734
+
+
+Processing patch
+Channel:  0
+Tile layer:  3169
+ij position:  285 424
+percentile:  9718.0
+Channel:  1
+Tile layer:  3169
+ij position:  285 424
+percentile:  9718.0
+Channel:  2
+Tile layer:  3169
+ij position:  285 424
+percentile:  9718.0
+Total seconds:  0.009874343872070312
+
+
+Processing patch
+Channel:  0
+Tile layer:  1293
+ij position:  130 183
+percentile:  9718.0
+Channel:  1
+Tile layer:  1293
+ij position:  130 183
+percentile:  9718.0
+Channel:  2
+Tile layer:  1293
+ij position:  130 183
+percentile:  9718.0
+Total seconds:  0.0068242549896240234
+
+
+Processing patch
+Channel:  0
+Tile layer:  447
+ij position:  310 367
+percentile:  9718.0
+Channel:  1
+Tile layer:  447
+ij position:  310 367
+percentile:  9718.0
+Channel:  2
+Tile layer:  447
+ij position:  310 367
+percentile:  9718.0
+Total seconds:  0.010225057601928711
+
+
+Processing patch
+Channel:  0
+Tile layer:  2642
+ij position:  439 225
+percentile:  9718.0
+Channel:  1
+Tile layer:  2642
+ij position:  439 225
+percentile:  9718.0
+Channel:  2
+Tile layer:  2642
+ij position:  439 225
+percentile:  9718.0
+Total seconds:  0.006767988204956055
+
+
+Processing patch
+Channel:  0
+Tile layer:  2547
+ij position:  450 90
+percentile:  9718.0
+Channel:  1
+Tile layer:  2547
+ij position:  450 90
+percentile:  9718.0
+Channel:  2
+Tile layer:  2547
+ij position:  450 90
+percentile:  9718.0
+Total seconds:  0.009937286376953125
+
+
+Processing patch
+Channel:  0
+Tile layer:  2145
+ij position:  335 505
+percentile:  9718.0
+Channel:  1
+Tile layer:  2145
+ij position:  335 505
+percentile:  9718.0
+Channel:  2
+Tile layer:  2145
+ij position:  335 505
+percentile:  9718.0
+Total seconds:  0.006729841232299805
+
+
+Processing patch
+Channel:  0
+Tile layer:  2954
+ij position:  438 206
+percentile:  9718.0
+Channel:  1
+Tile layer:  2954
+ij position:  438 206
+percentile:  9718.0
+Channel:  2
+Tile layer:  2954
+ij position:  438 206
+percentile:  9718.0
+Total seconds:  0.01014089584350586
+
+
+Processing patch
+Channel:  0
+Tile layer:  139
+ij position:  386 490
+percentile:  9718.0
+Channel:  1
+Tile layer:  139
+ij position:  386 490
+percentile:  9718.0
+Channel:  2
+Tile layer:  139
+ij position:  386 490
+percentile:  9718.0
+Total seconds:  0.006871223449707031
+
+
+Processing patch
+Channel:  0
+Tile layer:  2708
+ij position:  228 119
+percentile:  9718.0
+Channel:  1
+Tile layer:  2708
+ij position:  228 119
+percentile:  9718.0
+Channel:  2
+Tile layer:  2708
+ij position:  228 119
+percentile:  9718.0
+Total seconds:  0.010357856750488281
+
+
+Processing patch
+Channel:  0
+Tile layer:  1910
+ij position:  383 25
+percentile:  9718.0
+Channel:  1
+Tile layer:  1910
+ij position:  383 25
+percentile:  9718.0
+Channel:  2
+Tile layer:  1910
+ij position:  383 25
+percentile:  9718.0
+Total seconds:  0.006720066070556641
+
+
+Processing patch
+Channel:  0
+Tile layer:  858
+ij position:  194 456
+percentile:  9718.0
+Channel:  1
+Tile layer:  858
+ij position:  194 456
+percentile:  9718.0
+Channel:  2
+Tile layer:  858
+ij position:  194 456
+percentile:  9718.0
+Total seconds:  0.010085344314575195
+
+
+Processing patch
+Channel:  0
+Tile layer:  184
+ij position:  72 350
+percentile:  9718.0
+Channel:  1
+Tile layer:  184
+ij position:  72 350
+percentile:  9718.0
+Channel:  2
+Tile layer:  184
+ij position:  72 350
+percentile:  9718.0
+Total seconds:  0.0068018436431884766
+
+
+Processing patch
+Channel:  0
+Tile layer:  2910
+ij position:  498 349
+percentile:  9718.0
+Channel:  1
+Tile layer:  2910
+ij position:  498 349
+percentile:  9718.0
+Channel:  2
+Tile layer:  2910
+ij position:  498 349
+percentile:  9718.0
+Total seconds:  0.009809732437133789
+
+
+Processing patch
+Channel:  0
+Tile layer:  3284
+ij position:  215 77
+percentile:  9718.0
+Channel:  1
+Tile layer:  3284
+ij position:  215 77
+percentile:  9718.0
+Channel:  2
+Tile layer:  3284
+ij position:  215 77
+percentile:  9718.0
+Total seconds:  0.0065250396728515625
+
+
+Processing patch
+Channel:  0
+Tile layer:  87
+ij position:  50 5
+percentile:  9718.0
+Channel:  1
+Tile layer:  87
+ij position:  50 5
+percentile:  9718.0
+Channel:  2
+Tile layer:  87
+ij position:  50 5
+percentile:  9718.0
+Total seconds:  0.009875297546386719
+
+
+Processing patch
+Channel:  0
+Tile layer:  1258
+ij position:  390 69
+percentile:  9718.0
+Channel:  1
+Tile layer:  1258
+ij position:  390 69
+percentile:  9718.0
+Channel:  2
+Tile layer:  1258
+ij position:  390 69
+percentile:  9718.0
+Total seconds:  0.006787776947021484
+
+
+Processing patch
+Channel:  0
+Tile layer:  1778
+ij position:  232 435
+percentile:  9718.0
+Channel:  1
+Tile layer:  1778
+ij position:  232 435
+percentile:  9718.0
+Channel:  2
+Tile layer:  1778
+ij position:  232 435
+percentile:  9718.0
+Total seconds:  0.010158777236938477
+
+
