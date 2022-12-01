@@ -1,7 +1,0 @@
- ### computing with SLURM
- ### package paths set to:
- # conda: /hpc/local/CentOS7/pmc_rios/anaconda
- # STAPL-3D: /hpc/local/CentOS7/pmc_rios/projects/STAPL3D-dev1.0.0/stapl3d
- # ACME: /hpc/local/CentOS7/pmc_rios/workspace/MR-Source/Linux-i686
- # FIJI: /hpc/local/CentOS7/pmc_rios/workspace/Fiji.app/ImageJ-linux64
- # ILASTIK: /hpc/local/CentOS7/pmc_rios/workspace/ilastik-1.3.2post1-Linux/run_ilastik.sh
