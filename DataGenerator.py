@@ -286,7 +286,7 @@ if __name__ == '__main__':
     parser.add_argument("--Biosample", help = "Enter biological sample name")
     parser.add_argument("--DatasetSize", help = "Enter size of training data to generate")
     parser.add_argument("--DataMode", help = "Enter data type: synthethic | real | weighted | For weighted blending alpha must be set")
-    parser.add_argument("--Alpha", help = "Enter nuclear alpha value for blending | membrane channel alpha is calculated 1-alpha")
+    parser.add_argument("--Alpha", help = "Enter ch1 alpha value for blending | ch2 alpha is automaticall calculated 1-alpha")
     parser.add_argument("--Normalization", help = "Enter normalization option for percentile value| od = Open detector percentile, ac = All channels percentiles")
     parser.add_argument("--Brightness", help = "Enter percentage of brighness augmented images in the dataset| enter as integer e.g. 50 -> means 50%")
 
