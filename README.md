@@ -30,7 +30,7 @@ GenerateData.sh is the bash script where all the parameters can be entered for r
 - Number of channels must be set to 3 (further updates could remove this option) 
 - Selection of the bottom and top layer to specify the range in the z-axis from which to extract patches 
 - "Biosample" allows you to enter a name for the dataset folder according to the organism from which the 3D image was acquired
-- Selecting dataset sizes for the training and testing. When setting the --DataSize parameter, e.g., 1000, the code will generate 1000 training images and 10%, in this case 100 images, will be generated for the testing.  
+- Selecting dataset sizes for the training and testing. When setting the --DataSize parameter, e.g., 1000, the code will generate 1000 training images and 10%, in this case 100 images will be generated for the testing
 - Creating real, synthetic, or weighted blended data using "DataMode". When using the weighted blending option, the --Alpha parameter must be defined. The given alpha value is applied to ch1, and a (1-alpha) is automatically calculated for ch2. 
 - Two different normalization approaches can be set. The first is to normalize each channel using its corresponding calculated percentile value. The second is to normalize all three channels using the calculated percentile value of the third channel.  
 - Brightness augmentation can be implemented by entering an integer representing the percentage of data that will contain brightness variation. The brightness range is fixed and can be adjusted in the code. 
