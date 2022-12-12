@@ -31,16 +31,16 @@ Paired images are the required input format for pix2pix training and testing. A 
 
 GenerateData.sh is the bash script where all the parameters can be entered for running DataGenerator.py. The parameters contain the following options: 
 
-- <p align="justify">File path for the 3D dataset. This patch extraction tool was designed only for the CZI file format with 3 channels, where the first and second are two different cellular markers, e.g., ch1 = CDH1 (membrane), ch2 = KI67 (nuclear), and ch3 = mixed signal (open detector).</p> 
-- <p align="justify">Percentile value (float) that will be used to normalize the data based on the parameter option given in --Normalization.</p>
-- <p align="justify">Selection of patch size. This cannot exceed the size of the tile in the CZI file.</p>
-- <p align="justify">Number of channels must be set to 3 (further updates could remove this option).</p> 
-- <p align="justify">The bottom and top layers are selected to indicate the z-axis range from which patches are extracted.</p>
-- <p align="justify">"Biosample" allows you to enter a name for the dataset folder according to the organism from which the 3D image was acquired.</p>
-- <p align="justify">Selecting dataset sizes for the training and testing. When setting the --DataSize parameter, e.g., 1000, the code will generate 1000 training images and 10%, in this case 100 images will be generated for the testing.</p>
-- <p align="justify">Creating real, synthetic, or weighted blended data using "DataMode". When using the weighted blending option, the --Alpha parameter must be defined. The given alpha value is applied to ch1, and a (1-alpha) is automatically calculated for ch2.</p>
-- <p align="justify">Two different normalization approaches can be set. The first is to normalize each channel using its corresponding calculated percentile value. The second is to normalize all three channels using the calculated percentile value of the third channel.</p>
-- <p align="justify">Brightness augmentation can be implemented by entering an integer representing the percentage of data that will contain brightness variation. The brightness range is fixed and can be adjusted in the code.</p>
+- File path for the 3D dataset. This patch extraction tool was designed only for the CZI file format with 3 channels, where the first and second are two different cellular markers, e.g., ch1 = CDH1 (membrane), ch2 = KI67 (nuclear), and ch3 = mixed signal (open detector).
+- Percentile value (float) that will be used to normalize the data based on the parameter option given in --Normalization.
+- Selection of patch size. This cannot exceed the size of the tile in the CZI file.
+- Number of channels must be set to 3 (further updates could remove this option). 
+- The bottom and top layers are selected to indicate the z-axis range from which patches are extracted.
+- "Biosample" allows you to enter a name for the dataset folder according to the organism from which the 3D image was acquired.
+- Selecting dataset sizes for the training and testing. When setting the --DataSize parameter, e.g., 1000, the code will generate 1000 training images and 10%, in this case 100 images will be generated for the testing.
+- Creating real, synthetic, or weighted blended data using "DataMode". When using the weighted blending option, the --Alpha parameter must be defined. The given alpha value is applied to ch1, and a (1-alpha) is automatically calculated for ch2.
+- Two different normalization approaches can be set. The first is to normalize each channel using its corresponding calculated percentile value. The second is to normalize all three channels using the calculated percentile value of the third channel.
+- Brightness augmentation can be implemented by entering an integer representing the percentage of data that will contain brightness variation. The brightness range is fixed and can be adjusted in the code.
 
 After running the script will create a folder with subdirectories training, testing, and validation. 
 
