@@ -59,19 +59,23 @@ After running the script will create a folder with subdirectories training, test
 The [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git) repository was used for the trainings. This framework can be run on Linux or Mac OS using Python 3 and either a CPU or an NVIDIA GPU with CUDA CuDNN. To train a model, the pix2pix includes several parameter settings that can be changed for training. 
 
 ### Training and testing examples
-The **DataGenerator.py** creates folders with the foldername required by the pix2pix. The subfolders of training data of the pix2pix must be names "train" and "test". To load the training or testing data, a path to the generated dataset folder must be specified for the -—dataroot option. The following are examples of training and testing bash scripts:
+The **DataGenerator.py** creates folders with the foldername required by the pix2pix. The subfolders of training data of the pix2pix must be named "train" and "test". To load the training or testing data, a path to the generated dataset folder must be specified for the -—dataroot option. The following are examples of training and testing bash scripts:
 
 </div>
 
 **Training**
 
 ```
+conda activate pytorch-CycleGAN-and-pix2pix
+
 python train.py --dataroot ./datasets/bc_organoid_synthetic_patches_data_1k --name bc_organoid_1k_synthetic_100ep_n_epochs_100_n_epochs_decay_100_netG_resnet_9blocks --model pix2pix --direction AtoB --display_winsize 256 --load_size 512 --gan_mode lsgan --n_epochs 100 --n_epochs_decay 100 --netG resnet_9blocks
 ```
 
 **Testing**
 
 ```
+conda activate pytorch-CycleGAN-and-pix2pix
+
 python test.py --dataroot ./datasets/bc_organoid_synthetic_patches_data_1k --name bc_organoid_1k_synthetic_100ep_n_epochs_100_n_epochs_decay_100_netG_resnet_9blocks --model pix2pix --direction AtoB --display_winsize 256 --load_size 512 --preprocess scale_width --netG resnet_9blocks
 ```
 
