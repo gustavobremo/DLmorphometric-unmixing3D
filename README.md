@@ -28,7 +28,7 @@ Paired images are the required input format for pix2pix training and testing. A 
 
 GenerateData.sh is the bash script where all the parameters can be entered for running DataGenerator.py. The parameters contain the following options: 
 
-- File path for the 3D dataset. This patch extraction tool was designed only for the CZI file format with 3 channels, where the first and second are two different cellular markers, e.g., ch1 = CDH1 (membrane), ch2 = KI67 (nuclear), and ch3 = mixed signal (open detector). 
+- <p align="justify">File path for the 3D dataset. This patch extraction tool was designed only for the CZI file format with 3 channels, where the first and second are two different cellular markers, e.g., ch1 = CDH1 (membrane), ch2 = KI67 (nuclear), and ch3 = mixed signal (open detector). </p>
 - Percentile value which can be a float and will be used to normalize the data acoording to the parameter option set in --Normalization
 - Selection of patch size. This cannot exceed the size of the tile in the CZI file.
 - Number of channels must be set to 3 (further updates could remove this option) 
