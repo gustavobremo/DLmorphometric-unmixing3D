@@ -29,7 +29,7 @@ Paired images are the required input format for pix2pix training and testing. A 
 <img src='imgs/img2.png' align="center" width=512>
 
 
-GenerateData.sh is the bash script where all the parameters can be entered for running DataGenerator.py. The parameters contain the following options: 
+**GenerateData.sh** is the bash script where all the parameters can be entered for running **DataGenerator.py**. The parameters contain the following options: 
 
 - File path for the 3D dataset. This patch extraction tool was designed only for the CZI file format with 3 channels, where the first and second are two different cellular markers, e.g., ch1 = CDH1 (membrane), ch2 = KI67 (nuclear), and ch3 = mixed signal (open detector).
 
@@ -59,9 +59,10 @@ After running the script will create a folder with subdirectories training, test
 
 <div align="justify">
 
-The [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git) repository was used to clone the pix2pix framekwork. 
+The [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git) repository was used for the trainings. This framework can be run on Linux or Mac OS using Python 3 and either a CPU or an NVIDIA GPU with CUDA CuDNN. To train a model, the pix2pix includes several parameter settings that can be changed for training. The first set of parameters is listed in [base_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/base_options.py) and the second set in [train_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/train_options.py). 
 
-The framework can be run on Linux or Mac OS using Python 3 and either a CPU or an NVIDIA GPU with CUDA CuDNN. To train a model, the pix2pix includes several parameter settings that can be changed for training. The first set of parameters is listed in [base_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/base_options.py) and the second set in [train_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/train_options.py). To load the generated data created with the **DataGenerator.py**, a path to the generated dataset folder comprising the training and testing set must be specified for the pix2pix -—dataroot option. 
+###Training example
+To load the generated data created with the **DataGenerator.py**, a path to the generated dataset folder comprising the training and testing set must be specified for the pix2pix -—dataroot option. 
 
 </div>
 
