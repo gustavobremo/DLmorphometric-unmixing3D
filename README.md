@@ -29,7 +29,7 @@ Paired images are the required input format for pix2pix training and testing. A 
 **GenerateData.sh** is the bash script where all the parameters can be entered for running **DataGenerator.py**. The following is an example of a bash script used to generate **real** training and testing data consisting of 10 imgages normalized using 99th percentile of each channel and extracted from the layer 67 to 69.
 
 ```
-python DataGenerator.py --Filepath {absolute path to folder with czi file}/VMP_RL1_Exp001_VirtualMultiplexingGT/VMP_RL1_Exp001_Img010_mix4GT.czi --Percentile 99 --PatchSize 512 --Channels 3 --BottomLayer 67 --TopLayer 69 --Biosample bc_organoid --DatasetSize 10 --DataMode real --Normalization ac 
+python DataGenerator.py --Filepath {absolute path to folder with czi file}/VMP_RL1_Exp001_Img010_mix4GT.czi --Percentile 99 --PatchSize 512 --Channels 3 --BottomLayer 67 --TopLayer 69 --Biosample bc_organoid --DatasetSize 10 --DataMode real --Normalization ac 
 ```
 
 The parameters contain the following options: 
