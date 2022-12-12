@@ -27,8 +27,7 @@ Paired images are the required input format for pix2pix training and testing. A 
 
 
 <img src='imgs/img2.png' align="center" width=512>
-
-
+\
 **GenerateData.sh** is the bash script where all the parameters can be entered for running **DataGenerator.py**. The parameters contain the following options: 
 
 - File path for the 3D dataset. This patch extraction tool was designed only for the CZI file format with 3 channels, where the first and second are two different cellular markers, e.g., ch1 = CDH1 (membrane), ch2 = KI67 (nuclear), and ch3 = mixed signal (open detector).
