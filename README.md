@@ -59,7 +59,7 @@ After running the script will create a folder with subdirectories training, test
 The [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git) repository was used for the trainings. This framework can be run on Linux or Mac OS using Python 3 and either a CPU or an NVIDIA GPU with CUDA CuDNN. To train a model, the pix2pix includes several parameter settings that can be changed for training. 
 
 ### Training and testing examples
-The **DataGenerator.py** creates folders with the foldername required by the pix2pix. To load the training or testing data, a path to the generated dataset folder must be specified for the -—dataroot option. The following are examples of training and testing bash scripts:
+The **DataGenerator.py** creates folders with the foldername required by the pix2pix. The subfolders of training data of the pix2pix must be names "train" and "test". To load the training or testing data, a path to the generated dataset folder must be specified for the -—dataroot option. The following are examples of training and testing bash scripts:
 
 </div>
 
