@@ -20,10 +20,11 @@ Code for calculating metrics and examples
 ## Datasets
 
 ### Preparing your own datasets for pix2pix
-Paired images are the required input format for pix2pix training and testing. A Python script is provided here to generate training & testing data in the form of pairs of images [A,B] by extracting patches from the 3D dataset. A represents the source image, and B represents the target image.
+<p align="justify">
+Paired images are the required input format for pix2pix training and testing. A Python script is provided here to generate training & testing data in the form of pairs of images [A,B] by extracting patches from the 3D dataset. A represents the source image, and B represents the target image.</p>
 
 <img src='imgs/img2.png' align="center" width=512>
-
+<p style='text-align: justify;'>
 GenerateData.sh is the bash script where all the parameters can be entered for running DataGenerator.py. The parameters contain the following options: 
 - File path for the 3D dataset. This patch extraction tool was designed only for the CZI file format with 3 channels, where the first and second are two different cellular markers, e.g., ch1 = CDH1 (membrane), ch2 = KI67 (nuclear), and ch3 = mixed signal (open detector). 
 - Percentile value which can be a float and will be used to normalize the data acoording to the parameter option set in --Normalization
@@ -37,7 +38,7 @@ GenerateData.sh is the bash script where all the parameters can be entered for r
 - Brightness augmentation can be implemented by entering an integer representing the percentage of data that will contain brightness variation. The brightness range is fixed and can be adjusted in the code. 
 
 After running the script will create a folder with subdirectories training, testing, and validation. 
-
+</p>
 
 ## Trainings
 
