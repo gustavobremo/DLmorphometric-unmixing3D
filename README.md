@@ -63,10 +63,13 @@ The **DataGenerator.py** creates folders with the foldername required by the pix
 
 </div>
 Training
+
 ```
 python train.py --dataroot ./datasets/bc_organoid_synthetic_patches_data_1k --name bc_organoid_1k_synthetic_100ep_n_epochs_100_n_epochs_decay_100_netG_resnet_9blocks --model pix2pix --direction AtoB --display_winsize 256 --load_size 512 --gan_mode lsgan --n_epochs 100 --n_epochs_decay 100 --netG resnet_9blocks
 ```
+
 Testing
+
 ```
 python test.py --dataroot ./datasets/bc_organoid_synthetic_patches_data_1k --name bc_organoid_1k_synthetic_100ep_n_epochs_100_n_epochs_decay_100_netG_resnet_9blocks --model pix2pix --direction AtoB --display_winsize 256 --load_size 512 --preprocess scale_width --netG resnet_9blocks
 ```
