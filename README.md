@@ -62,19 +62,20 @@ The [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git) repos
 The **DataGenerator.py** creates folders with the foldername required by the pix2pix. To load the training or testing data, a path to the generated dataset folder must be specified for the -—dataroot option. The following are examples of training and testing bash scripts:
 
 </div>
-Training
+
+**Training**
 
 ```
 python train.py --dataroot ./datasets/bc_organoid_synthetic_patches_data_1k --name bc_organoid_1k_synthetic_100ep_n_epochs_100_n_epochs_decay_100_netG_resnet_9blocks --model pix2pix --direction AtoB --display_winsize 256 --load_size 512 --gan_mode lsgan --n_epochs 100 --n_epochs_decay 100 --netG resnet_9blocks
 ```
 
-Testing
+**Testing**
 
 ```
 python test.py --dataroot ./datasets/bc_organoid_synthetic_patches_data_1k --name bc_organoid_1k_synthetic_100ep_n_epochs_100_n_epochs_decay_100_netG_resnet_9blocks --model pix2pix --direction AtoB --display_winsize 256 --load_size 512 --preprocess scale_width --netG resnet_9blocks
 ```
 
-More information on network training options can be found in [base_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/base_options.py) and [train_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/train_options.py). 
+More information on network training options can be found in [base_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/base_options.py), [train_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/train_options.py), and [test_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/test_options.py). 
 
 
 
