@@ -24,7 +24,7 @@ The repository contains the following:
 
 Paired images are the required input format for pix2pix training and testing. A Python script is provided here to generate training & testing data in the form of pairs of images [A,B] by extracting patches from the 3D dataset. **A** represents the source image with mixed signal, and **B** represents the target image with the un-mixed signal.
 
-</div>
+
 
 <img src='imgs/img2.png' align="center" width=512>
 
@@ -44,6 +44,7 @@ GenerateData.sh is the bash script where all the parameters can be entered for r
 
 After running the script will create a folder with subdirectories training, testing, and validation. 
 
+</div>
 
 ## Trainings
 
