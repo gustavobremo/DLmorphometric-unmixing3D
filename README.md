@@ -57,13 +57,13 @@ After running the script will create a folder with subdirectories training, test
 
 ## Trainings
 
-<p align="justify">
+<div align="justify">
 
 The [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git) repository was used to clone the pix2pix framekwork. 
 
 The framework can be run on Linux or Mac OS using Python 3 and either a CPU or an NVIDIA GPU with CUDA CuDNN. To train a model, the pix2pix includes several parameter settings that can be changed for training. The first set of parameters is listed in [base_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/base_options.py) and the second set in [train_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/train_options.py). To load the generated data created with the **DataGenerator.py**, a path to the dataset of this folder comprising the training and testing set must be specified for the pix2pix -—dataroot argument. 
 
-</p>
+</div>
 
 ## Metrics
 
