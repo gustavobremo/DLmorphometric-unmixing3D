@@ -44,7 +44,7 @@ After running the script will create a folder with subdirectories training, test
 
 ## Trainings
 <p align="justify">
-The pix2pix framework was cloned from the repository [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). The framework can be implemented on a Linux or mac OS with Python 3 and
+The pix2pix framework was cloned from the repository [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix.git). The framework can be implemented on a Linux or mac OS with Python 3 and
 CPU or NVIDIA GPU + CUDA CuDNN. 
 
 In order to train a model, the pix2pix has different parameter options which can be adjusted for the training. The first set of parameters are listed in the [base_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/base_options.py) and the second set in [train_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/train_options.py).To load the generated data created with the **DataGenerator.py**, a path of the dataset of this folder containing the training, testing set must be provided for the --dataroot parameter of the pix2pix. 
