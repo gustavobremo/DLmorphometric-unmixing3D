@@ -64,7 +64,7 @@ The **DataGenerator.py** creates folders with the foldername specified by the pi
 </div>
 
 ```
-python [train.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/train.py) --dataroot ./datasets/bc_organoid_synthetic_patches_data_1k --name bc_organoid_1k_synthetic_100ep_n_epochs_100_n_epochs_decay_100_netG_resnet_9blocks --model pix2pix --direction AtoB --display_winsize 256 --load_size 512 --gan_mode lsgan --n_epochs 100 --n_epochs_decay 100 --netG resnet_9blocks
+python train.py --dataroot ./datasets/bc_organoid_synthetic_patches_data_1k --name bc_organoid_1k_synthetic_100ep_n_epochs_100_n_epochs_decay_100_netG_resnet_9blocks --model pix2pix --direction AtoB --display_winsize 256 --load_size 512 --gan_mode lsgan --n_epochs 100 --n_epochs_decay 100 --netG resnet_9blocks
 ```
 
 More information on network training options can be found in [base_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/base_options.py) and [train_options.py](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/options/train_options.py). 
