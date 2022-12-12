@@ -43,7 +43,7 @@ After running the script will create a folder with subdirectories training, test
 
 
 ## Trainings
-<p style='text-align: justify;'>
+<p align="justify">
 The pix2pix framework was cloned from the repository [Pix2Pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). The framework can be implemented on a Linux or mac OS with Python 3 and
 CPU or NVIDIA GPU + CUDA CuDNN. 
 
