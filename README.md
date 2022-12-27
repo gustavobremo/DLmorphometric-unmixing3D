@@ -46,8 +46,8 @@ The parameters contain the following options:
 
 - Number of channels must be set to 3 (further updates could remove this option). 
 
-- The bottom and top layers are selected to indicate the z-axis range from which patches are extracted.
-
+- The bottom and top layers are used to specify the z-axis range from which patches are extracted.
+ 
 - "Biosample" allows you to enter a name for the dataset folder according to the organism from which the 3D image was acquired.
 
 - Selecting dataset sizes for the training and testing. When setting the --DataSize parameter, e.g., 1000, the code will generate 1000 training images and 10%, in this case 100 images will be generated for the testing.

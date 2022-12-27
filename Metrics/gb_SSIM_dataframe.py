@@ -7,7 +7,6 @@ import cv2
 from skimage.transform import resize
 import matplotlib.pyplot as plt
 import numpy as np
-import seaborn as sns
 import statistics
 import pandas as pd
 
@@ -16,16 +15,16 @@ from image_similarity_measures.quality_metrics import rmse, psnr, ssim
 
 
 #This is a list containing the name of the experiments.
-experiment_prefix = ["real_newnorm_nobr","real_newnorm_br"]
+experiment_prefix = ["real","synthetic"]
 
 
-
+# Function for saving image examples
 def saveimage(ri,fi,s,i,m):
 
     fig, axes = plt.subplots(1,2,sharex=True)
 
 
-    # plt.imshow(rB)
+    #Showing real and generated images
     axes[0].imshow(ri)
     axes[0].set_title("True")    
     axes[1].imshow(fi)
@@ -39,7 +38,7 @@ def saveimage(ri,fi,s,i,m):
     plt.close()
     
     
-
+#Function returns the SSIM for the nuclear and membrane channel
 def getSSIM(r,f,i):
     #reading the images of the real and fake
     rB = imread(r)
@@ -66,35 +65,34 @@ def getSSIM(r,f,i):
 
 
     #Skimage
-    s_pax8 = ssimsk(realpax8img,fakepax8img,multichannel=True,gaussian_weights=True, sigma=1.5, use_sample_covariance=False, win_size=11, data_range = 255)
-    s_CDH1 = ssimsk(realCDH1img,fakeCDH1img,multichannel=True,gaussian_weights=True, sigma=1.5, use_sample_covariance=False, win_size=11, data_range = 255)    
+    ssim_nuclear = ssimsk(realpax8img,fakepax8img,multichannel=True,gaussian_weights=True, sigma=1.5, use_sample_covariance=False, win_size=11, data_range = 255)
+    ssim_membrane = ssimsk(realCDH1img,fakeCDH1img,multichannel=True,gaussian_weights=True, sigma=1.5, use_sample_covariance=False, win_size=11, data_range = 255)    
 
 
-    return(s_pax8,s_CDH1)
+    return(ssim_nuclear,ssim_membrane)
 
 #------------------------------------------------------------------------------------------------------------------------------------------------
-
+#Calculates PSNR between real and generated imgage
 def getPSNR(r,f,i):
-    # rB = imread(folder+"/"+r.split("/")[-1])
-    # fB = imread(folder+"/"+f.split("/")[-1])    
+    #Reading images
     rB = imread(r)
     fB = imread(f)
 
     #image to dislay
-    #PAX8
+    #Nuclear real 
     realpax8img = rB.copy()
     realpax8img[:,:,1] = 0
     realpax8img[:,:,2] = 0
-
+    #Nuclear fake 
     fakepax8img = fB.copy()
     fakepax8img[:,:,1] = 0
     fakepax8img[:,:,2] = 0
     
-    #CDH1
+    #Membrane real
     realCDH1img = rB.copy()
     realCDH1img[:,:,0] = 0
     realCDH1img[:,:,2] = 0
-
+    #Membrane fake
     fakeCDH1img = fB.copy()
     fakeCDH1img[:,:,0] = 0
     fakeCDH1img[:,:,2] = 0
@@ -106,39 +104,23 @@ def getPSNR(r,f,i):
     rB_CDH1 = rB[:,:,1]
     fB_CDH1 = fB[:,:,1]
 
-    #Skimage
-    # s_pax8 = ssimsk(realpax8img,fakepax8img,multichannel=True,gaussian_weights=True, sigma=1.5, use_sample_covariance=False, win_size=11, data_range = 255)
-    # s_CDH1 = ssimsk(realCDH1img,fakeCDH1img,multichannel=True,gaussian_weights=True, sigma=1.5, use_sample_covariance=False, win_size=11, data_range = 255)    
-
-    # s_pax8 = ssimsk(rB_pax8,fB_pax8,multichannel=True,gaussian_weights=True, sigma=1.5, use_sample_covariance=False, win_size=11, data_range = 255)
-    # s_CDH1 = ssimsk(rB_CDH1,fB_CDH1,multichannel=True,gaussian_weights=True, sigma=1.5, use_sample_covariance=False, win_size=11, data_range = 255)  
-
-    #image_similarity_measures SSIM
-    # s_pax8 = ssim(rB_pax8,fB_pax8)
-    # s_CDH1 = ssim(rB_CDH1,fB_CDH1)
-
     # image_similarity_measures PSNR
     s_pax8 = cv2.PSNR(rB_pax8, fB_pax8)
     s_CDH1 = cv2.PSNR(rB_CDH1,fB_CDH1)
 
-    # saveimage(realpax8img,fakepax8img,s_pax8,i,"pax8")
-    # saveimage(realCDH1img,fakeCDH1img,s_CDH1,i,"CDH1")
-
     return(s_pax8,s_CDH1)
 #------------------------------------------------------------------------------------------------------------------------------------------------
 
-#Create df categories
+#Create df categories labels
 def get_categories(category,n):
     
     categories = []
     #repeating n labels of the same category
     for k in range(n):
         categories.append(category)
-    
+
     df_cat = pd.DataFrame(categories)
-    # df_cat = df_cat.transpose()
     df_cat.columns = ["experiment"]
-    # print(df_cat)
     return(df_cat)
 
 
@@ -194,9 +176,6 @@ def create_dataframe(prefix,mode):
             f = os.path.join(directory,fakeList[i])
             r = os.path.join(directory,realList[i])
 
-            print(f)
-            print(r)
-            print("\n")
             #Options to calculate ssim or psnr. Can be set when calling the function. 
             if mode == "ssim":
                 #calls function to calculate ssim for the nulear and membrane. 
@@ -208,14 +187,13 @@ def create_dataframe(prefix,mode):
             # appending calculated ssim for each channel
             nuclear_ssim.append(nuclear)
             membrane_ssim.append(membrane)
-            print(i)
+
         #Creating categorical lables for the channels
         x = ["KI67","CDH1"]
 
         y = [nuclear_ssim,membrane_ssim]
 
-        print(x)
-        print(y)
+
         #Get categorical labels for the experiments
         exp_cat_df_nucl = get_categories(x[0],len(realList))
         exp_cat_df_mem = get_categories(x[1],len(realList))
@@ -233,7 +211,6 @@ def create_dataframe(prefix,mode):
         
         #creating a pandas dataframe membrane with categories
         df_membrane = pd.DataFrame(y[1])
-        # df_nuclear = df_nuclear.transpose()
         df_membrane = pd.concat([exp_cat_df_mem,memb_cat_df, df_membrane], axis=1)
         df_membrane.columns = ["Channels","Training",mode_status]
 
@@ -243,10 +220,7 @@ def create_dataframe(prefix,mode):
 
         df = pd.concat([df_nuclear, df_membrane], axis=0)
         
-        print("\n")
-        print(df)
-
-
+        #Updating loop index
         j = j+1
 
     joined_df_list = main_nuclei_df_list + main_membrane_df_list
@@ -259,10 +233,10 @@ def create_dataframe(prefix,mode):
             mainframe = pd.concat([mainframe, joined_df_list[k]], axis=0)
 
 
-
-    print(mainframe)
+    #Creating a CSV file storing the SSIM from all folders
     mainframe.to_csv(mode_status+'_distributions_data_categorized.csv', index=False)
 
+    #Log file displaying order of folder experiments processed
     with open('exp_order.txt', 'a') as exp_file:
         for f in order_experiments:
             exp_file.write(f"{f}\n")
