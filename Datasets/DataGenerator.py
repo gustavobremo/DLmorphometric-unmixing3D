@@ -49,8 +49,7 @@ def get_patch(l,uby,ubx,patchsize,channels,channel_stacks,percentiles,mode,alpha
     l = int(brightnessRange[0] * 100)
     u = int(brightnessRange[1]*100)
     brightnesslist = [round(x*0.01,2) for x in range(l,u,1)]
-
-    print("Processing patch")   
+  
     #setting arguments to integers
     uby = int(uby)
     ubx = int(ubx)
@@ -80,9 +79,6 @@ def get_patch(l,uby,ubx,patchsize,channels,channel_stacks,percentiles,mode,alpha
     for c in range(channels):
         #extracting the patch from channel "c" from the layer "rl" of the stack 
         patch = channel_stacks[c][rl, yax[0]:yax[1],xax[0]:xax[1]]
-        print("Channel: ",c)
-        print("Tile layer: ",rl)
-        print("ij position: ",yax[0],xax[0])
         
         if normalization == "ac":
             # Normalizing the patch using the percentile of the current channel "c"
@@ -131,10 +127,8 @@ def get_patch(l,uby,ubx,patchsize,channels,channel_stacks,percentiles,mode,alpha
     if Brightness:
             #Enhancing brightness of source image 
         if random.randint(0,100) < int(Brightness):
-            print("augmented")
             source_image = BrightnessAugmentation(source_image.astype(np.uint8),brightnesslist)
         else:
-            print("Not augmented")
             source_image = source_image.astype(np.uint8)
 
     #----------****CREATING TARGET IMAGE****----------
@@ -178,17 +172,15 @@ def main_DataGenerator(filepath,percentile,patchsize,channels,l_layer,u_layer,bi
     for i in range(channels):
         #Temporary list holding the collected stacked planes from channel "i" each iteration
         tmp_channel_stacked_planes = []
-        print("Loading channel: ",i)
         #For each layer in the range of lower and uper layer limits
         for j in range(l_layer,u_layer):
-            print("Adding layer: ",j)
             #Extracting layer (or plane) using the reading function from stapl3D. The plane consist of 49 tiles. 
             data = shading.read_tiled_plane(filepath,i,j)
             #Stacking the 49 tiles on top of each other. 
             dstacked = np.stack(data, axis=0)
             #Add stacked tiles from the single plane to temp list collecting each plane
             tmp_channel_stacked_planes.append(dstacked)
-        print("Compiling list for channel: ",i)
+
         #Stacking all collected planes from a single channel as the following dimensions l,y,x   
         planes_stacked = np.vstack(tmp_channel_stacked_planes)
         #Append stacked planes of a single channel to list which collects all channel planes. 
@@ -206,25 +198,19 @@ def main_DataGenerator(filepath,percentile,patchsize,channels,l_layer,u_layer,bi
     dimensions = channel_stacks[0].shape 
 
 
-    print("\n")
-    print("Percentiles ch1,ch2,ch3 :",percentiles)
-    print("\n")
     #Getting dimension of 3D stack l=layers, y and x tile size
     l = dimensions[0]
     y = dimensions[1]
     x = dimensions[2]
-    print("\n")
-    print(l,y,x)
+
     #Upperbound for x and y (avoid taking patch beyond frame size)
     ubx = x-patchsize
     uby = y-patchsize
-    print(ubx)
-    print(uby)
+
     #Defining proportions of the dataset
     t_train = int(datasize)
     t_test  = int(t_train*0.2)
     t_val   = int(t_train*0.2)
-    print("\n")
 
  
     #----------****CREATING FOLDERS****----------
@@ -249,21 +235,21 @@ def main_DataGenerator(filepath,percentile,patchsize,channels,l_layer,u_layer,bi
 
     #----------********----------
     #Extracting patches for training testing and validation
-    print("Training set ************")
+
     #Generating training set
     for t in range(t_train):    
-        print("Patch: ",t,"generating") 
+
         #Random patch is extracted and a synthetic source image and a ground truth target image is returned concatenated in AB png format
         image_AB = get_patch(l,uby,ubx,patchsize,channels,channel_stacks,percentiles,mode,alpha,Norm,Brightness)
         #Saving the AB patch
         matplotlib.image.imsave(datafoldername+"/train/"+str(t)+'.png', image_AB.astype(np.uint8))
-    print("Testing set ************")
+
     for t in range(t_test):  
         #Random patch is extracted and a synthetic source image and a ground truth target image is returned concatenated in AB png format
         image_AB = get_patch(l,uby,ubx,patchsize,channels,channel_stacks,percentiles,mode,alpha,Norm,Brightness)
         #Saving the AB patch
         matplotlib.image.imsave(datafoldername+"/test/"+str(t)+'.png', image_AB.astype(np.uint8))
-    print("Validating set ************")
+
     for t in range(t_val):  
         #Random patch is extracted and a synthetic source image and a ground truth target image is returned concatenated in AB png format
         image_AB = get_patch(l,uby,ubx,patchsize,channels,channel_stacks,percentiles,mode,alpha,Norm,Brightness)
